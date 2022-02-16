@@ -1,2 +1,2 @@
-# react-atomic-design-training-2
+# react-atomic-design-training
 Created with CodeSandbox
