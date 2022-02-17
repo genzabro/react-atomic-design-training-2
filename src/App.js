@@ -1,4 +1,6 @@
+import { UserProvider } from "./providers/UserProvider";
 import { Router } from "./rouer/Router";
+import React from "react";
 import "./styles.css";
 
 const user = {
@@ -13,5 +15,9 @@ const user = {
 };
 
 export default function App() {
-  return <Router />;
+  return (
+    <UserProvider>
+      <Router />
+    </UserProvider>
+  );
 }
