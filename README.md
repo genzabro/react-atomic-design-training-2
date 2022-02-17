@@ -1,2 +1,2 @@
 # react-atomic-design-training
-完成版
+Created with CodeSandbox

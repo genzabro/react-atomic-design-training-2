@@ -2,6 +2,7 @@ import { UserProvider } from "./providers/UserProvider";
 import { Router } from "./rouer/Router";
 import React from "react";
 import "./styles.css";
+import { RecoilRoot } from "recoil";
 
 const user = {
   name: "おら",
@@ -16,8 +17,10 @@ const user = {
 
 export default function App() {
   return (
-    <UserProvider>
-      <Router />
-    </UserProvider>
+    <RecoilRoot>
+      <UserProvider>
+        <Router />
+      </UserProvider>
+    </RecoilRoot>
   );
 }
